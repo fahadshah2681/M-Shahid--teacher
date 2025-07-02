@@ -10,18 +10,18 @@
         :root {
             /* Light Mode Variables */
             --primary-light: #2c3e50;
-            --secondary-light: #3498db;
+            --secondary-light: #1c93e2;
             --accent-light: #e74c3c;
             --bg-light: #f8f9fa;
             --card-light: #ffffff;
-            --text-light: #333333;
+            --text-light: #1b1a1a;
             --text-secondary-light: #777777;
             --border-light: #e0e0e0;
             
             /* Dark Mode Variables */
             --primary-dark: #e0e0e0;
             --secondary-dark: #3498db;
-            --accent-dark: #e74c3c;
+            --accent-dark: #e43c2a;
             --bg-dark: #121212;
             --card-dark: #1e1e1e;
             --text-dark: #f0f0f0;
@@ -113,6 +113,7 @@
             transform: translateX(-50%) perspective(1000px) rotateX(0deg);
             z-index: 1000;
             background: var(--blur-bg);
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border-radius: 50px;
             padding: 12px 25px;
@@ -1180,6 +1181,7 @@
                 left: 0;
                 right: 0;
                 background: var(--blur-bg);
+                -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
                 flex-direction: column;
                 padding: 20px;
@@ -1285,7 +1287,7 @@
                 <div class="profile-container">
                     <div class="profile-border"></div>
                     <div class="profile-image">
-                        <img src="images/logo.jpg" alt="Profile Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" />
+<img src="images/logo.jpg" alt="Profile Logo" class="profile-logo-img" />
                     </div>
                 </div>
             </div>
@@ -1328,7 +1330,8 @@
                             </div>
                             <div class="info-content">
                                 <h4>Email</h4>
-                                <p>mshahid6878@gmail.com</p>
+                                <p><a href="mailto:mshahid6878@gmail.com">mshahid6878@gmail.com</a></p>
+                                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mshahid6878@gmail.com" target="_blank" rel="noopener" class="btn btn-primary">Click here to send email</a></p>
                             </div>
                         </div>
                     </div>
@@ -1341,7 +1344,7 @@
                     <div class="profile-container">
                         <div class="profile-border"></div>
                         <div class="profile-image">
-                            <img src="images/logo.jpg" alt="Profile Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" />
+<img src="images/logo.jpg" alt="Profile Logo" class="profile-logo" />
                         </div>
                     </div>
                 </div>
@@ -1370,7 +1373,7 @@
                         <i class="fas fa-university"></i>
                     </div>
                     <h3 class="education-title">M.Sc. in Mathematics</h3>
-                    <div class="education-period">2016 - 2018</div>
+                    <div class="education-period"> 2013 - 2015</div>
                     <p class="education-description">The Islamia University of Bahawalpur, Pakistan. Focused on pure mathematics and teaching methodologies.</p>
                 </div>
                 <div class="education-card">
@@ -1378,7 +1381,7 @@
                         <i class="fas fa-book"></i>
                     </div>
                     <h3 class="education-title">B.Sc. in Mathematics</h3>
-                    <div class="education-period">2013 - 2015</div>
+                    <div class="education-period">2010 - 2012</div>
                     <p class="education-description">The Islamia University of Bahawalpur, Pakistan. Comprehensive study of mathematical foundations.</p>
                 </div>
             </div>
@@ -1389,7 +1392,7 @@
     <section id="experience" class="experience section-padding">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title">13 Years Experience</h2>
                 <p class="section-subtitle">My professional journey as a mathematics educator</p>
             </div>
             <div class="timeline">
@@ -1420,7 +1423,7 @@
                     <div class="timeline-content">
                         <div class="timeline-period">2016 - 2018</div>
                         <h3 class="timeline-title">Mathematics Tutor</h3>
-                        <p class="timeline-description">Provided personalized tutoring services to high school and college students. Helped over 50 students achieve top grades in mathematics examinations.</p>
+                        <p class="timeline-description">Provided personalized tutoring services to high school and college students. Helped over 500 Plus students achieve top grades in mathematics examinations.</p>
                     </div>
                 </div>
             </div>
@@ -1451,7 +1454,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>mshahid6878@gmail.com</span>
+                            <span><a href="mailto:mshahid6878@gmail.com">mshahid6878@gmail.com</a></span>
                         </div>
                     </div>
                 </div>
@@ -1499,10 +1502,10 @@
                     </ul>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                    <a href="#" class="social-link" title="Follow me on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                    <a href="https://www.facebook.com/shahid.asghar.288430" class="social-link" title="Visit my Facebook profile"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" title="Follow me on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
